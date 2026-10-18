@@ -1,0 +1,27 @@
+{
+  "name": "@qmoosa/dex-aggregator-protocol",
+  "version": "1.0.0",
+  "description": "DEX Aggregator Protocol — Multi-Path Routing Invariants, Optimal Split Curves & Slippage Math",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/protocol.test.mjs",
+    "test:forge": "cd contracts && forge test",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "dex-aggregator",
+    "routing",
+    "split-swap",
+    "slippage",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
